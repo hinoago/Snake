@@ -1,0 +1,109 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	height: 100vh;
+	width: 100vw;
+	text-align: center;
+	background-image: url("dirt.png");
+}
+
+:root {
+	--size: 0px;
+}
+
+.container{
+	height: 90%;
+	width: 100%;
+}
+
+.outside{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inside{
+	position: absolute;
+	background-color: #67ad44;
+}
+
+.snake{
+	background-color: #077bb5;
+	position: absolute;
+	width: var(--size);
+	height: var(--size);
+}
+
+.food{
+	background-color: red;
+	position: absolute;
+	width: var(--size);
+	height: var(--size);
+}
+
+.points{
+	display: inline;
+	color: white;
+}
+
+.leaderboard{
+	position: absolute;
+}
+
+.leaderboard table{	
+	color: white;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.leaderboard th, td{
+	width: 50%;
+	text-align: center;
+	padding: 5px;
+	border: 1px solid white;
+}
+
+.end{
+	font-family: Arial;
+	text-align: center;
+	z-index: 1;
+	position: absolute;
+	border-radius: 25% 25% / 50%;
+	background-color: #ccc;
+}
+
+.end button{
+	background-color: #a36546;
+	cursor: pointer;
+	border: none;
+	padding: 2%;
+	border-radius: 10% 10% / 50%;
+}
+
+.end button:hover{
+	background-color: #6B3D00;
+}
+
+.input_name{
+	display: block;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	border-radius: 10% 10% / 50%;
+	text-align: center;
+}
+
+.input_name:focus{
+	outline: transparent;
+	color: #999;
+}
+
+.lose{
+	margin-bottom: 3%;
+}
